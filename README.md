@@ -3,7 +3,7 @@
 A modern, responsive, and interactive **Strong Password Generator** built with HTML, CSS, and JavaScript.  
 It allows users to generate secure passwords based on custom settings, view their strength, and copy them with a single click.
 
-![Password Generator Screenshot](screenshot.png)
+![Password Generator Screenshot](Screenshot.png)
 
 ---
 
