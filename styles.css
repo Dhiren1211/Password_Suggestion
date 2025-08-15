@@ -33,6 +33,7 @@ h1 {
 
 .password-display {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     margin-bottom: 1rem;
