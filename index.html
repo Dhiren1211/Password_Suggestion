@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🔐 Strong Password Generator</h1>
+        
+        <div class="password-display">
+            <input type="password" id="password" readonly>
+            <button id="toggle-password" class="icon-btn" title="Show/Hide Password">
+                <i class="fas fa-eye"></i>
+            </button>
+            <button id="copy-btn" class="icon-btn" title="Copy to Clipboard">
+                <i class="fas fa-copy"></i>
+            </button>
+        </div>
+
+        <div id="copy-notification" class="copy-notification">✅ Password copied!</div>
+        
+        <div class="strength-meter">
+            <div id="strength-bar"></div>
+            <span id="strength-text">Weak</span>
+        </div>
+
+        <div class="options">
+            <div class="option-group">
+                <label for="length">Password Length</label>
+                <select id="length">
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                    <option value="12" selected>12</option>
+                    <option value="16">16</option>
+                    <option value="24">24</option>
+                </select>
+            </div>
+            
+            <div class="option-group checkboxes">
+                <label><input type="checkbox" id="uppercase" checked> Uppercase (A-Z)</label>
+                <label><input type="checkbox" id="lowercase" checked> Lowercase (a-z)</label>
+                <label><input type="checkbox" id="numbers" checked> Numbers (0-9)</label>
+                <label><input type="checkbox" id="symbols" checked> Symbols (!@#$%)</label>
+            </div>
+        </div>
+
+        <button id="generate-btn" class="generate-btn">
+            <i class="fas fa-sync-alt"></i> Generate Password
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
